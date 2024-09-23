@@ -1,0 +1,47 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Oxanium', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Swiper styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #00bf72 !important;
+}
+
+/* Custom styles for menu animation */
+.menu-expand-enter {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease-in, opacity 300ms ease-in;
+}
+.menu-expand-enter-active {
+  max-height: 300px;
+  opacity: 1;
+}
+.menu-expand-exit {
+  max-height: 300px;
+  opacity: 1;
+}
+.menu-expand-exit-active {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease-in, opacity 300ms ease-in;
+}
